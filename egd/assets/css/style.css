@@ -1,0 +1,17 @@
+.navbar {
+    background-color: #ADD8E6 !important; /* Açık mavi navbar */
+    height: 110px; /* Navbar yüksekliği */
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    display: flex;
+    position: absolute;
+}
+
+.navbar-brand img {
+    width: 130px;
+    height: 130px;
+    margin-left: -90px;
+}
