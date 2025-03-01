@@ -1,70 +1,12 @@
 /* General Navbar Styling */
 .navbar {
     background-color: #ADD8E6 !important; /* Light blue */
-    height: 110px;
-    display: flex;
-    align-items: center;
-    position: relative;
 }
 
-/* Ensure Logo Stays Fixed at Right */
-.navbar-brand {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-/* Logo Size */
+/* Logo Boyutu ve Konumu */
 .navbar-brand img {
-    height: 70px;
-    max-width: 140px;
-    object-fit: contain;
+    height: 50px; /* Logonun yüksekliği */
+    max-width: 150px; /* Genişliği aşırı büyümemesi için sınırlandır */
+    object-fit: contain; /* Logonun bozulmasını önler */
 }
 
-/* Navbar Items */
-.navbar-nav {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-}
-
-/* Navbar Links */
-.navbar-nav .nav-link {
-    font-size: 18px;
-    color: #333;
-    padding: 10px;
-}
-
-/* Hamburger Button (Left Aligned) */
-.navbar-toggler {
-    border: none;
-    outline: none;
-    margin-right: auto; /* Push to left */
-    position: relative;
-    z-index: 1050;
-}
-
-/* Mobile Menu - No Animation */
-@media (max-width: 991px) {
-    .collapse.navbar-collapse {
-        background-color: white;
-        padding: 15px;
-        border-radius: 5px;
-        position: absolute;
-        top: 100px; /* Appears below navbar */
-        left: 10px; /* Instantly appears */
-        width: 200px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-    }
-
-    .navbar-nav {
-        flex-direction: column;
-        text-align: left;
-    }
-
-    .navbar-nav .nav-item {
-        margin-bottom: 10px;
-    }
-}
