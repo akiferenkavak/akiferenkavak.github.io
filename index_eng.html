@@ -1,36 +1,29 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eğitim Geliştirme Derneği</title>
-
-    <!-- ✅ Bootstrap 5 CSS CDN -->
+    <title>Home - Education Development Association</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    
-    <!-- ✅ Bootstrap 5 Ikonlar (Opsiyonel, Navbar için Gerekli Değil Ama Faydalı) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-    
-    <!-- ✅ Özel CSS Dosyan (Eğer Kullanıyorsan) -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <!-- ✅ Logo (Sağda Kalabilir veya Sola Gidebilir) -->
-                <a class="navbar-brand me-auto" href="index.html">
+                <!-- Logo -->
+                <a class="navbar-brand me-auto" href="index_eng.html">
                     <img src="assets/images/logo.png" alt="Logo" class="logo">
                 </a>
         
-                <!-- ✅ Hamburger Buton -->
+                <!-- Hamburger Button -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
         
-                <!-- ✅ Navbar Menü Öğeleri -->
+                <!-- Navbar Menu Items -->
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-item nav-link active" href="index_eng.html">Home</a>
@@ -44,20 +37,25 @@
                 </div>
             </div>
         </nav>
-        
     </header>
 
-    <section class="container text-center mt-5">
-         <!--<h2>Eğitim Geliştirme Derneği, eğitimin geliştirilmesine katkı sağlamak ve herkes için erişilebilirliğini artırmak amacıyla faaliyetler gerçekleştirmektedir</h2> -->
-         <p>Education Development Association carries out activities to contribute to the development of education and increase its accessibility for everyone.</p>
-    </section>
+    <div class="main-container">
+        <div class="sidebar">
+            <div class="org-title">
+                <h1>EDUCATION DEVELOPMENT ASSOCIATION</h1>
+            </div>
+        </div>
+        <div class="content">
+            <section class="text-center mt-3">
+                <p>Education Development Association carries out activities to contribute to the development of education and increase its accessibility for everyone.</p>
+            </section>
+        </div>
+    </div>
 
     <footer class="bg-light text-center py-3 mt-5">
         <p>© 2025 Education Development Association</p>
     </footer>
 
-    <!-- ✅ Bootstrap 5 JavaScript CDN (Navbar gibi bileşenlerin çalışması için gerekli) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>

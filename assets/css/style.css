@@ -1,12 +1,61 @@
-/* General Navbar Styling */
 .navbar {
     background-color: #ADD8E6 !important; /* Light blue */
 }
 
-/* Logo Boyutu ve Konumu */
+/* Logo Size and Position */
 .navbar-brand img {
-    height: 50px; /* Logonun yüksekliği */
-    max-width: 150px; /* Genişliği aşırı büyümemesi için sınırlandır */
-    object-fit: contain; /* Logonun bozulmasını önler */
+    height: 50px;
+    max-width: 150px;
+    object-fit: contain;
 }
 
+/* Main layout structure */
+.main-container {
+    display: flex;
+    min-height: calc(100vh - 200px); /* Account for header and footer */
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 50%;
+    background-color: #4CAF50; /* Green background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Main organization title */
+.org-title h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Content area */
+.content {
+    width: 50%;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+    
+    .sidebar, .content {
+        width: 100%;
+    }
+    
+    .sidebar {
+        padding: 1.5rem;
+    }
+    
+    .org-title h1 {
+        font-size: 1.8rem;
+    }
+}
