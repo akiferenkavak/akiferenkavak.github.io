@@ -1,3 +1,4 @@
+/* Updated navbar to include organization name */
 .navbar {
     background-color: #ADD8E6 !important; /* Light blue */
 }
@@ -7,6 +8,18 @@
     height: 50px;
     max-width: 150px;
     object-fit: contain;
+}
+
+/* Added organization name styling in navbar */
+.org-name {
+    font-weight: 600;
+    color: #000000;
+    margin: 0 20px;
+    font-size: 1.2rem;
+}
+
+.org-title h1 {
+    color: black;
 }
 
 /* Main layout structure */
@@ -25,8 +38,8 @@
     padding: 2rem;
 }
 
-/* Main organization title */
-.org-title h1 {
+/* Main page title in sidebar */
+.page-title h1 {
     color: white;
     font-size: 2.5rem;
     font-weight: 700;
@@ -55,7 +68,12 @@
         padding: 1.5rem;
     }
     
-    .org-title h1 {
+    .page-title h1 {
         font-size: 1.8rem;
     }
+    
+    .org-name {
+        display: none; /* Hide on mobile */
+    }
 }
+
