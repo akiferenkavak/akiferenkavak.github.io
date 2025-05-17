@@ -3,33 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What We Do - Education Development Association</title>
+    <title>Home - Education Development Association</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+            <div class="container">
+                <!-- Logo -->
                 <a class="navbar-brand" href="index_eng.html">
                     <img src="assets/images/logo.png" alt="Logo" class="logo">
                 </a>
+                
+                <!-- Organization name in navbar -->
                 <div class="org-name d-none d-lg-block">EDUCATION DEVELOPMENT ASSOCIATION</div>
         
+                <!-- Hamburger Button -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
         
+                <!-- Navbar Menu Items -->
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-item nav-link" href="index_eng.html">Home</a>
                         <a class="nav-item nav-link" href="about_eng.html">About Us</a>
                         <a class="nav-item nav-link active" href="work_eng.html">What We Do</a>
                         <a class="nav-item nav-link" href="contact_eng.html">Contact</a>
-                        <div class="nav-item nav-link">
-                            <a href="work.html" style="text-decoration: none;">TR</a> | <span class="active">ENG</span>
+                        <div class="nav-item nav-link lang-switch">
+                            <a href="work.html" class="lang-link">TR</a> | <span class="active">ENG</span>
                         </div>
                     </div>
                 </div>
@@ -37,31 +45,93 @@
         </nav>
     </header>
 
-    <div class="main-container">
-        <div class="sidebar">
-            <div class="page-title">
-                <h1>WHAT WE DO</h1>
+    <main class="flex-grow-1">
+        <div class="page-header">
+            <div class="container">
+                <h1 class="page-title text-center">WHAT WE DO</h1>
             </div>
         </div>
-        <div class="content">
-            <section class="mt-3">
-                <p class="mt-4">To contribute to the development of education:</p>
-                <ul class="list-group mt-4">
-                    <li class="list-group-item">Developing educational programs, content, methods and tools in line with various subjects such as sustainable development goals, academic courses.</li>
-                    <li class="list-group-item">Conducting educational studies for children, youth and adults with national and international institutions and organizations.</li>
-                    <li class="list-group-item">Developing digital educational tools and materials.</li>
-                    <li class="list-group-item">Conducting research to develop activities.</li>
-                    <li class="list-group-item">Organizing educational studies such as courses, seminars, conferences and panels.</li>
-                    <li class="list-group-item">Publishing digital content, newspapers, magazines, books and bulletins in line with their purposes to announce their studies.</li>
-                </ul>
-            </section>
+        
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="content-card">
+                        <div class="card-body">
+                            <h2 class="mb-4 text-center">Our Educational Development Activities</h2>
+                            <p class="lead mb-4">To contribute to the development of education:</p>
+                            
+                            <div class="row mt-5">
+                                <div class="col-lg-6 mb-4">
+                                    <div class="work-item p-4 h-100 bg-light rounded">
+                                        <i class="bi bi-book fs-2 text-primary mb-3"></i>
+                                        <h4>Educational Programs</h4>
+                                        <p>Developing educational programs, content, methods and tools in line with various subjects such as sustainable development goals, academic courses, science, art, culture, social, health, sports and environmental education.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <div class="work-item p-4 h-100 bg-light rounded">
+                                        <i class="bi bi-globe fs-2 text-primary mb-3"></i>
+                                        <h4>National and International Collaborations</h4>
+                                        <p>Conducting educational studies for children, youth and adults with national and international institutions and organizations.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <div class="work-item p-4 h-100 bg-light rounded">
+                                        <i class="bi bi-laptop fs-2 text-primary mb-3"></i>
+                                        <h4>Digital Education</h4>
+                                        <p>Developing digital educational tools and materials.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <div class="work-item p-4 h-100 bg-light rounded">
+                                        <i class="bi bi-search fs-2 text-primary mb-3"></i>
+                                        <h4>Research </h4>
+                                        <p>Conducting research to develop activities.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <div class="work-item p-4 h-100 bg-light rounded">
+                                        <i class="bi bi-people fs-2 text-primary mb-3"></i>
+                                        <h4>Educational Events</h4>
+                                        <p>Organizing educational studies such as courses, seminars, conferences and panels.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <div class="work-item p-4 h-100 bg-light rounded">
+                                        <i class="bi bi-file-earmark-text fs-2 text-primary mb-3"></i>
+                                        <h4>Publications</h4>
+                                        <p>Publishing digital content, newspapers, magazines, books and bulletins in line with their purposes to announce their studies.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </main>
 
-    <footer class="bg-light text-center py-3 mt-5">
-        <p>© 2025 Education Development Association</p>
+    <footer class="footer mt-auto">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-md-6">
+                    <h5>Education Development Association</h5>
+                    <p>Working to contribute to the development of education.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5>Contact</h5>
+                    <p><i class="bi bi-geo-alt-fill"></i> Demetgül Mahallesi 422. Sokak 45/A Yenimahalle/ANKARA</p>
+                    <p><i class="bi bi-envelope-fill"></i> egitimigelistirmedernegi@gmail.com</p>
+                </div>
+            </div>
+            <div class="row border-top pt-3">
+                <div class="col text-center">
+                    <p class="small mb-0">© 2025 Education Development Association</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
+</html> 
