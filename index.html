@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anasayfa - Eğitimi Geliştirme Derneği</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+            <div class="container">
                 <!-- Logo -->
                 <a class="navbar-brand" href="index.html">
                     <img src="assets/images/logo.png" alt="Logo" class="logo">
@@ -33,8 +36,8 @@
                         <a class="nav-item nav-link" href="about.html">Hakkımızda</a>
                         <a class="nav-item nav-link" href="work.html">Yaptığımız İşler</a>
                         <a class="nav-item nav-link" href="contact.html">İletişim</a>
-                        <div class="nav-item nav-link">
-                            <span class="active">TR</span> | <a href="index_eng.html" style="text-decoration: none;">ENG</a>
+                        <div class="nav-item nav-link lang-switch">
+                            <span class="active">TR</span> | <a href="index_eng.html" class="lang-link">ENG</a>
                         </div>
                     </div>
                 </div>
@@ -42,21 +45,80 @@
         </nav>
     </header>
 
-    <div class="main-container">
-        <div class="sidebar">
-            <div class="page-title">
-                <h1>ANASAYFA</h1>
+    <main class="flex-grow-1">
+        <div class="page-header">
+            <div class="container">
+                <h1 class="page-title text-center">ANASAYFA</h1>
             </div>
         </div>
-        <div class="content">
-            <section class="text-center mt-3">
-                <p>Eğitim Geliştirme Derneği, eğitimin geliştirilmesine katkı sağlamak ve herkes için erişilebilirliğini artırmak amacıyla faaliyetler gerçekleştirmektedir</p>
-            </section>
+        
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="content-card">
+                        <div class="card-body text-center">
+                            <h2 class="mb-4">Eğitimin Geleceği İçin</h2>
+                            <p class="lead mb-4">Eğitim Geliştirme Derneği, eğitimin geliştirilmesine katkı sağlamak ve herkes için erişilebilirliğini artırmak amacıyla faaliyetler gerçekleştirmektedir.</p>
+                            <div class="d-flex justify-content-center mt-4">
+                                <a href="about.html" class="btn btn-primary me-2">Hakkımızda</a>
+                                <a href="work.html" class="btn btn-outline-primary">Yaptığımız İşler</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-5">
+                        <div class="col-md-4">
+                            <div class="content-card h-100">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-mortarboard-fill fs-1 text-primary mb-3"></i>
+                                    <h3>Eğitim</h3>
+                                    <p>Çocuk, genç ve yetişkinler için nitelikli eğitim programları geliştiriyoruz.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="content-card h-100">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-laptop fs-1 text-primary mb-3"></i>
+                                    <h3>Dijital</h3>
+                                    <p>Teknoloji destekli eğitim araçları ve materyaller oluşturuyoruz.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="content-card h-100">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-globe fs-1 text-primary mb-3"></i>
+                                    <h3>Sürdürülebilir</h3>
+                                    <p>Sürdürülebilir kalkınma amaçları doğrultusunda çalışmalar yapıyoruz.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </main>
 
-    <footer class="bg-light text-center py-3 mt-5">
-        <p>© 2025 Eğitimi Geliştirme Derneği</p>
+    <footer class="footer mt-auto">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-md-6">
+                    <h5>Eğitimi Geliştirme Derneği</h5>
+                    <p>Eğitimin geliştirilmesine katkı sağlamak için çalışıyoruz.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5>İletişim</h5>
+                    <p><i class="bi bi-geo-alt-fill"></i> Demetgül Mahallesi 422. Sokak 45/A Yenimahalle/ANKARA</p>
+                    <p><i class="bi bi-envelope-fill"></i> egitimigelistirmedernegi@gmail.com</p>
+                </div>
+            </div>
+            <div class="row border-top pt-3">
+                <div class="col text-center">
+                    <p class="small mb-0">© 2025 Eğitimi Geliştirme Derneği</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
